@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Airline Reviews</title>
+	  <style type="text/css">
+    header{
+        background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("https://papers.co/wallpaper/papers.co-ob34-night-flight-plane-rain-nature-36-3840x2400-4k-wallpaper.jpg");
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+      }
+    p{
+      margin-left: 40px;
+      margin-right: 40px;
+      font-size: 20px;
+      color: white;
+      font-weight: bold;
+      }
+    ul{
+      float: right;
+      list-style-type: none;
+      margin-top: 25px;
+      }
+    ul li{
+      display: inline-block;
+    }
+    ul li a{
+      text-decoration: none;
+      color: #fff;
+      padding: 5px 20px;
+      border: 1px solid transparent;
+      transition: 0.6s ease;
+    }
+    ul li a:hover{
+      background-color: #fff;
+      color: #000;
+    }
+    ul li.active a{
+      background-color: #fff;
+      color: #000;
+    }
+    ul li.active1 a{
+      background-color: #fff;
+      color: #000;
+    }
+    .main{
+      max-width: 1200px;
+      margin: auto;
+    }
+    .title2{
+      position: relative;
+      top: -12%;
+      left: 60%;
+      transform: translate(-50%,-50%);
+    }
+    .title2 h1{
+      color: #fff;
+      font-size: 60px;
+    }
+  </style>
+</head>
+<body>
+	<header>
+		<div class="main">
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Airline Details</a></li>
+				<li class="active1"><a href="#">Review</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</div>
+		<br><br><br><br><br><br><br><br><br><br>
+				<div class="title2">
+			<h1>REVIEW ABOUT THE AIRLINES HERE</h1>
+		</div>
+<br>
+<div>
+  <p style="font-size: 30px;text-align: center;margin-top: -10%; color: lightgray;">Enter your feedback here:</p><br>
+  <form action = "/review" method = "POST">
+<textarea name="message" rows="5" cols="100" placeholder="Enter your text here!" style="margin-left: 25%;background-color:silver;opacity:0.85;"></textarea>
+  <br><br>
+  <center><input type="submit" style="font-size: 20px;">
+  </form>
+</div>
+<center><b style="font-size: 50px;color:white;">{{label}}</b></center>
+</body>
+</html>
